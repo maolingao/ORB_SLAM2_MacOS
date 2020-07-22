@@ -38,11 +38,14 @@ else()
       find_package(OpenCV 2.4 QUIET)
    endif()
 endif()
-message("OpenCV Version: ${OPENCV_VERSION}")
 
 find_package(Eigen3 3.1.0 REQUIRED)
-message("Eigen Version: ${EIGEN_VERSION}")
 find_package(Pangolin REQUIRED)
+
+message(STATUS "OpenCV version: ${OpenCV_VERSION}")
+message(STATUS "Eigen3 version: ${EIGEN3_VERSION}")
+message(STATUS "Pangolin version: ${Pangolin_VERSION}")
+
 
 include_directories(
 ${PROJECT_SOURCE_DIR}

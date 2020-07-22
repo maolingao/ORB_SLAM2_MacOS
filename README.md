@@ -7,6 +7,7 @@ One of the main issues on MacOS was Pangolin needing to run on the main thread. 
 + Pangolin as submodule
 ## Setup dependencies on Mac
 + brew install opencv@2 glew eigen
+
 Note: if multiple opencv versions are installed, additionally setting a new environment variable OPENCV2_INSTALL_DIR to where the opencv2 has been installed(so that cmake can find the correct version, orbslam2 doesn't compile with opencv4).
 
 # ORB-SLAM2 - Original Text
