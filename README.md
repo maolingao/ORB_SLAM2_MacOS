@@ -3,7 +3,11 @@ This fork has been modified to be compatible on Mac systems. With required packa
 
 One of the main issues on MacOS was Pangolin needing to run on the main thread. Currently only the `mono_tum` executable has been modified to shift the computation onto its own thread, and keep Pangolin on the main thread. If you need this for other executables, it should be pretty straightforward following what I've done in `mono_tum.cc`.
 
+## What is new?
 + Pangolin as submodule
+## Setup dependencies on Mac
++ brew install opencv@2 glew eigen
+Note: if multiple opencv versions are installed, additionally setting a new environment variable OPENCV2_INSTALL_DIR to where the opencv2 has been installed(so that cmake can find the correct version, orbslam2 doesn't compile with opencv4).
 
 # ORB-SLAM2 - Original Text
 **Authors:** [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/), [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
